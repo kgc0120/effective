@@ -13,7 +13,7 @@ public interface HelloService {
      * 반환 타입의 하위 타입 객체를 반할 수 있다.
      * */
     static HelloService of(String lang) {
-        if(lang.equals("ko")) { // 장점4 매개변수에 따라 매번 다른 클래의 객체를 반환 할 수 있다.
+        if(lang.equals("ko")) { // (장점4) 매개변수에 따라 매번 다른 클래의 객체를 반환 할 수 있다.
             return new KoreanHelloService();
         } else {
             return new EnglishHelloService();
