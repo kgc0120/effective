@@ -19,4 +19,10 @@ public interface HelloService {
             return new EnglishHelloService();
         }
     }
+
+    // 기본 메서드
+    default String bye() {
+        return "bye";
+    }
+
 }
