@@ -20,8 +20,13 @@ public interface HelloService {
         }
     }
 
+    private void prepareMesssage() {
+
+    }
+
     // 기본 메서드
     default String bye() {
+        prepareMesssage();
         return "bye";
     }
 
