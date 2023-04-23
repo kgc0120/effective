@@ -16,5 +16,18 @@ class SpecllCheckerTest {
         specllChecker.isValid("test");
     }
 
+    @Test
+    void test() {
+
+
+        long start = 10000000;
+        int end = 500_000;
+        double test = 1_000_000.;
+
+        double sum = start - end / test ;
+
+        System.out.println(test);
+    }
+
 
 }
